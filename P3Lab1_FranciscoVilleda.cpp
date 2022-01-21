@@ -16,7 +16,7 @@ int main()
         cout << "Ingrese un numero menor a 100: ";
         cin >> num;
         if (num < 2 || num > 100) 
-            cout << "El numero debe ser menor a 100" << endl;
+            cout << "El numero debe ser al menos 2 y menor a 100" << endl;
         else 
             break;
     }
@@ -34,6 +34,7 @@ int main()
 }
 
 int primo(int n) {
+    //Funcion que determina si n es un primo
     int cont = 2;
     while (cont < n) {
         if (!(n % cont))
