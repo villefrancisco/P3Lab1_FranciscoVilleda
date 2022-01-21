@@ -4,28 +4,31 @@
 #include <iostream>
 
 using namespace std;
+
 int primo(int n);
 
 int main()
 {
     int num;
+    int suma = 4;
+
     while (true) {
         cout << "Ingrese un numero menor a 100: ";
         cin >> num;
-        if (num < 2 || num > 100) cout << "El numero debe ser menor a 100" << endl;
-        else break;
+        if (num < 2 || num > 100) 
+            cout << "El numero debe ser menor a 100" << endl;
+        else 
+            break;
     }
 
-    int cont = 4;
-
-    while (cont <= num) {
-        for (int n = 2; n <= cont - 2; n++) {
-            if (primo(n) && primo(cont - n)) {
-                cout << n << " + " << cont - n << " = " << cont << endl;
+    while (suma <= num) {
+        for (int n = 2; n <= suma - 2; n++) {
+            if (primo(n) && primo(suma - n)) {
+                cout << n << " + " << suma - n << " = " << suma << endl;
                 break;
             }
         }
-        cont += 2;
+        suma += 2;
     }
 
 }
