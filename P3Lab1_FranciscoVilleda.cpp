@@ -15,7 +15,7 @@ int main()
     while (true) {
         cout << "Ingrese un numero menor a 100: ";
         cin >> num;
-        if (num < 2 || num > 100) 
+        if (num < 2 || num >= 100) 
             cout << "El numero debe ser al menos 2 y menor a 100" << endl;
         else 
             break;
